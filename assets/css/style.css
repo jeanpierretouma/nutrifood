@@ -31,6 +31,7 @@ body {
   --orange: #F78812;
   --light-orange: #FFE5CE;
   --dark-gray: #757575;
+  --light-gray: #E5E5E5;
 }
 
 /* Layout & Grid */
@@ -59,7 +60,8 @@ body {
 }
 
 .heading-primary,
-.heading-secondary{
+.heading-secondary,
+.heading-tertiary {
   font-family: "Gentium Basic", serif;
   font-weight: 400;
   line-height: 1.2;
@@ -72,6 +74,13 @@ body {
 
 .heading-secondary {
   font-size: 2.281rem;
+}
+
+.heading-tertiary {
+  margin-bottom: 1rem;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 1.802rem;
+  font-weight: 500;
 }
 
 .body-normal-text {
@@ -203,6 +212,7 @@ a {
 
 .hero-image {
   max-width: 100%;
+  height: auto;
 }
 
 /* Features Section */
@@ -218,6 +228,7 @@ a {
 
 .features-image {
   min-width: 100%;
+  height: auto;
   border-radius: 1rem;
 }
 
@@ -257,4 +268,92 @@ a {
   font-size: 1.602rem;
   font-weight: 500;
   color: var(--black);
+}
+
+/* How-It-Works Section */
+
+.how-container {
+  flex-direction: column;
+}
+
+.how-container .section-header {
+  text-align: center;
+}
+
+.step-section {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  margin-bottom: 2rem;
+}
+
+.step-section:nth-child(3) {
+  flex-direction: row-reverse;
+}
+
+.step-section:nth-child(4) {
+  margin-bottom: 6rem;
+}
+
+.step-copy-box {
+  flex: 1;
+}
+
+.step-number {
+  display: inline-block;
+  font-family: "Gentium Basic", serif;
+  font-size: 6.583rem;
+  color: var(--light-gray);
+}
+
+.step-image-box {
+  flex: 0.79;
+}
+
+.step-image {
+  min-width: 100%;
+  height: auto;
+}
+
+.download-section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border: 0.125rem solid var(--light-orange);
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.download-section .body-normal-text {
+  margin-bottom: 2rem;
+}
+
+.download-cta-box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.download-cta {
+  max-width: 12.5rem;
+  height: auto;
+}
+
+.web-app-section {
+  padding: 2rem;
+  border-radius: 1rem;
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.726)),
+    url("../images/coming-soon-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.coming-soon {
+  padding: 0 10rem;
+  font-family: "Gentium Basic", serif;
+  font-size: 1.802rem;
+  line-height: 1.3;
+  letter-spacing: 0.025rem;
+  text-align: center;
+  color: var(--white);
 }
