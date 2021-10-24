@@ -6,13 +6,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-:root {
-  --dark-gray: #202020;
-  --dark-orange: #DF7403;
-  --orange: #F78812;
-  --white: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
