@@ -29,6 +29,7 @@ body {
   --white: #fff;
   --dark-orange: #DF7403;
   --orange: #F78812;
+  --light-orange: #FFE5CE;
   --dark-gray: #757575;
 }
 
@@ -36,19 +37,41 @@ body {
 
 .container {
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
   padding: 2rem;
   width: 1140px;
 }
 
+.section-header {
+  margin-bottom: 4rem;
+}
+
 /* Typography */
 
-.heading-primary {
+.sub-heading {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  color: var(--dark-orange);
+}
+
+.heading-primary,
+.heading-secondary{
   font-family: "Gentium Basic", serif;
   font-weight: 400;
-  font-size: 2.887rem;
   line-height: 1.2;
   letter-spacing: 0.025rem;
+}
+
+.heading-primary {
+  font-size: 2.887rem;
+}
+
+.heading-secondary {
+  font-size: 2.281rem;
 }
 
 .body-normal-text {
@@ -180,4 +203,58 @@ a {
 
 .hero-image {
   max-width: 100%;
+}
+
+/* Features Section */
+
+.features-container {
+  align-items: center;
+  gap: 7rem;
+}
+
+.features-image-box {
+  flex: 1.2;
+}
+
+.features-image {
+  min-width: 100%;
+  border-radius: 1rem;
+}
+
+.features-copy-box {
+  flex: 1.8;
+}
+
+.features-box {
+  display: flex;
+  gap: 4rem;
+}
+
+.features-box:first-of-type {
+  margin-bottom: 4rem;
+}
+
+.feature-box {
+  flex: 1;
+}
+
+.feature-icon {
+  display: inline-block;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 2rem;
+  padding: 1.1rem 0;
+  border-radius: 50%;
+  background-color: var(--light-orange);
+  font-size: 2.281rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--dark-orange);
+}
+
+.feature-title {
+  margin-bottom: 1rem;
+  font-size: 1.602rem;
+  font-weight: 500;
+  color: var(--black);
 }
