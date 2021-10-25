@@ -29,7 +29,7 @@ body {
   --white: #fff;
   --dark-orange: #DF7403;
   --orange: #F78812;
-  --light-orange: #FFE5CE;
+  --light-orange: #FFF5EC;
   --dark-gray: #757575;
   --light-gray: #E5E5E5;
 }
@@ -83,7 +83,7 @@ body {
   font-weight: 500;
 }
 
-.body-normal-text {
+.body-text {
   font-size: 1.266rem;
   line-height: 1.6;
   letter-spacing: 0.02rem;
@@ -179,7 +179,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.hero-copy-box .body-normal-text {
+.hero-copy-box .body-text {
   margin-bottom: 3rem;
 }
 
@@ -323,7 +323,7 @@ a {
   text-align: center;
 }
 
-.download-section .body-normal-text {
+.download-section .body-text {
   margin-bottom: 2rem;
 }
 
@@ -437,7 +437,7 @@ a {
   font-weight: 500;
 }
 
-.meal-attributes {
+.meal-attributes-list {
   list-style-type: none;
 }
 
@@ -449,7 +449,6 @@ a {
   display: flex;
   align-items: center;
   font-size: 1.125rem;
-  line-height: 1.6;
   letter-spacing: 0.02rem;
 }
 
@@ -460,5 +459,86 @@ a {
 }
 
 .recipes-btn-container {
+  text-align: center;
+}
+
+/* Pricing Section */
+
+.pricing-container {
+  flex-direction: column;
+}
+
+.pricing-container .section-header {
+  text-align: center;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.plan-card {
+  border: 2px solid var(--light-orange);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.plan-card:last-of-type {
+  background-color: var(--light-orange);
+}
+
+.plan-name {
+  margin-bottom: 1rem;
+  font-size: 1.424rem;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--dark-orange);
+}
+
+.plan-price {
+  margin-bottom: 0.5rem;
+  font-size: 2.281rem;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: center;
+}
+
+.plan-price-desc {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.plan-attributes-list {
+  list-style-type: none;
+}
+
+.plan-attributes-list .attribute {
+  color: var(--dark-gray);
+}
+
+.plan-attributes-list li {
+  margin-bottom: 1rem;
+}
+
+.plan-attributes-list li:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.plan-cta-box {
+  text-align: center;
+}
+
+.plan-cta-box .btn:link,
+.plan-cta-box .btn:visited {
+  padding: 1rem 2.5rem;
+}
+
+.pricing-terms {
+  font-size: 1rem;
   text-align: center;
 }
