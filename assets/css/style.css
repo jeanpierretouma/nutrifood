@@ -649,10 +649,74 @@ input[type=submit]:active {
 
 .signup-image-box {
   flex: 1.5;
+  border-radius: 0 1rem 1rem 0;
   background:
     linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
     url("../images/signup.png");
   background-position: center;
   background-size: cover;
-  border-radius: 0 1rem 1rem 0;
+}
+
+/* Footer Section */
+
+footer {
+  border-top: 2px solid var(--light-orange);
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--dark-gray);
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 3.8rem;
+  margin-bottom: 0;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  font-size: 0.889rem;
+  color: var(--dark-gray);
+  margin-top: auto;
+}
+
+.footer-heading {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+address {
+  font-style: normal;
+}
+
+.address {
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  color: var(--dark-gray);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: var(--black);
+}
+
+.footer-nav {
+  list-style-type: none;
+}
+
+.footer-nav li {
+  margin-bottom: 1rem;
 }
