@@ -40,7 +40,7 @@ body {
   display: flex;
   margin: 0 auto 4rem;
   padding: 2rem;
-  width: 1140px;
+  max-width: 71.25rem;
 }
 
 .section-header {
@@ -139,6 +139,7 @@ input[type=submit]:active {
 
 .nav-bar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 4rem;
@@ -151,8 +152,9 @@ input[type=submit]:active {
 
 .main-nav-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 4rem;
+  column-gap: 4rem;
   list-style-type: none;
 }
 
@@ -235,7 +237,7 @@ input[type=submit]:active {
 }
 
 .features-image {
-  min-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 1rem;
 }
@@ -319,7 +321,7 @@ input[type=submit]:active {
 }
 
 .step-image {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -400,7 +402,7 @@ input[type=submit]:active {
 }
 
 .meal-image {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 1rem 1rem 0 0;
 }
@@ -725,4 +727,288 @@ address {
 
 .footer-nav li:last-child {
   margin-bottom: 0;
+}
+
+
+/* - Media Queries - */
+
+/* For laptops and large tablets 1300px */
+@media only screen and (max-width: 1300px) {
+
+  /* Reusable Components */
+  .container {
+    max-width: 64rem;
+  }
+
+  /* Navigation Bar */
+  .nav-bar {
+    padding: 2rem;
+  }
+
+  /* Hero Section */
+  .hero-copy-box {
+    flex: 1;
+  }
+
+  .hero-image-box {
+    flex: 1;
+  }
+
+  /* Features Section */
+  .features-container {
+    text-align: center;
+  }
+
+  .features-image-box {
+    display: none;
+  }
+
+  .features-copy-box {
+    flex: 1;
+  }
+
+  /* How-It-Works Section */
+  .step-section {
+    gap: 4rem;
+  }
+
+  /* Meals Section */
+  .meal-cards-container {
+    gap: 2rem;
+  }
+}
+
+/* For Small laptops and normal tablets 1054px */
+@media only screen and (max-width: 1054px) {
+
+  /* Reusable Components */
+  .container {
+    max-width: 56rem;
+  }
+
+  /* Typography */
+  .heading-primary {
+    font-size: 2.566rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.027rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.602rem;
+  }
+
+  /* Navigation Bar */
+  .main-nav-list {
+    display: none;
+  }
+
+  /* Hero Section */
+  .hero-container {
+    column-gap: 4rem;
+  }
+
+  .hero-copy-box .btn:last-child:link,
+  .hero-copy-box .btn:last-child:visited {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  /* Features Section */
+  .feature-title {
+    font-size: 1.424rem;
+  }
+
+  /* How-It-Works Section */
+  .step-number {
+    font-size: 5.202rem;
+  }
+
+  /* Meals Section */
+  .meal-name {
+    font-size: 1.424rem;
+  }
+
+  /* Pricing Section */
+  .plan-name {
+    font-size: 1.266rem;
+  }
+  
+  .plan-price {
+    font-size: 2.027rem;
+  }
+
+  /* Signup Section */
+  .signup-text-box {
+    padding: 2rem;
+  }
+
+  /* Footer Section */
+  footer .container {
+    gap: 2rem;
+  }
+}
+
+/* For Tablets and Large phone 798px */
+@media only screen and (max-width: 798px) {
+
+  /* Reusable Components */
+  .container {
+    max-width: 100%;
+  }
+
+  /* Typography */
+  .body-text {
+    font-size: 1.125rem;
+  }
+
+  /* Navigation Bar */
+  .nav-bar {
+    padding: 1.4rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Hero Section */
+  .hero-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-copy-box .btn:last-child:link,
+  .hero-copy-box .btn:last-child:visited {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+
+  .hero-image {
+    max-width: 80%;
+  }
+
+  /* How-It-Works Section */
+  .step-section {
+    gap: 2rem;
+  }
+
+  .coming-soon {
+    padding: 0;
+  }
+
+  /* Meals Section */
+  .meal-cards-container {
+    gap: 1rem;
+  }
+
+  .meal-copy-box {
+    padding: 1rem;
+  }
+
+  .meal-name {
+    font-size: 1.125rem;
+  }
+
+  .attribute {
+    font-size: 1rem;
+  }
+
+  /* Signup Section */
+  .signup-form {
+    gap: 1rem;
+  }
+}
+
+/* For Large phone 635px */
+@media only screen and (max-width: 635px) {
+
+  /* Features Section */
+  .features-box {
+    flex-direction: column;
+  }
+
+  /* How-It-Works Section */
+  .step-section {
+    flex-direction: column;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .step-section:nth-child(3) {
+    flex-direction: column;
+  }
+
+  .step-image {
+    max-width: 80%;
+  }
+
+  /* Meals Section */
+  .meal-cards-container {
+    flex-direction: column;
+  }
+
+  .meal-image {
+    min-width: 100%;
+  }
+
+  .meal-name {
+    font-size: 1.602rem;
+  }
+
+  .attribute {
+    font-size: 1.125rem;
+  }
+
+  /* Pricing Section */
+  .plans-container {
+    flex-direction: column;
+  }
+
+  /* Testimonials Section */
+  .testimonials-box {
+    flex-direction: column;
+  }
+
+  /* Signup Section */
+  .signup-form-container {
+    flex-direction: column;
+  }
+
+  .signup-image-box {
+    display: none;
+  }
+
+  /* Footer Section */
+  footer .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+}
+
+/* For Small Phones 492px */
+@media only screen and (max-width: 492px) {
+
+  /* Global Settings */
+  html {
+    font-size: 15px;
+  }
+
+  /* Hero Section */
+  .hero-copy-box .btn:last-child:link,
+  .hero-copy-box .btn:last-child:visited {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  /* How-It-Works Section */
+  .download-cta-box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Signup Section */
+  .signup-form {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
