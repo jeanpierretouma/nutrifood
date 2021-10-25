@@ -103,7 +103,10 @@ a {
 .link:link,
 .link:visited,
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit],
+input[type=submit]:link,
+input[type=submit]:visited {
   font-size: 1.125rem;
   font-weight: 500;
   text-align: center;
@@ -111,7 +114,10 @@ a {
 }
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit],
+input[type=submit]:link,
+input[type=submit]:visited {
   display: inline-block;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
@@ -120,7 +126,9 @@ a {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
   background-color: var(--dark-orange);
 }
 
@@ -574,4 +582,77 @@ a {
 .customer-name {
   margin-top: 0.5rem;
   font-size: 1.125rem;
+}
+
+/* Signup Section */
+
+.signup-form-container {
+  display: flex;
+  border-radius: 1rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.1);
+}
+
+.signup-text-box {
+  flex: 2;
+  padding: 4rem;
+}
+
+.signup-text-box .heading-secondary {
+  margin-bottom: 1rem;
+}
+
+.signup-text-box .body-text {
+  margin-bottom: 3rem;
+}
+
+.signup-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: end;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  border: 2px solid var(--light-orange);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1.125rem;
+  color: var(--dark-gray);
+}
+
+input::placeholder {
+  color: var(--light-gray);
+}
+
+input[type=submit] {
+  border: 1px solid var(--orange);
+  padding: 0.75rem;
+  font-size: 1.266rem;
+  cursor: pointer;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+  border: 1px solid var(--dark-orange);
+}
+
+.signup-image-box {
+  flex: 1.5;
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+    url("../images/signup.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 1rem 1rem 0;
 }
