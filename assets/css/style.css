@@ -800,8 +800,12 @@ address {
   }
 
   /* Navigation Bar */
+  .nav-bar {
+    gap: 1.5rem;
+  }
+
   .main-nav-list {
-    display: none;
+    gap: 1.5rem;
   }
 
   /* Hero Section */
