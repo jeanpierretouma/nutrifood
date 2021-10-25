@@ -26,12 +26,12 @@ body {
 
 :root {
   --black: #202020;
+  --dark-gray: #676767;
+  --light-gray: #E5E5E5;
   --white: #fff;
   --dark-orange: #DF7403;
   --orange: #F78812;
-  --light-orange: #FFF5EC;
-  --dark-gray: #757575;
-  --light-gray: #E5E5E5;
+  --light-orange: #FFEEDD;
 }
 
 /* Layout & Grid */
@@ -385,18 +385,18 @@ input[type=submit]:active {
 .meal-card {
   overflow: hidden;
   border-radius: 1rem;
-  -webkit-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.1);
-  box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.1);
   transition: all 0.4s;
   cursor: pointer;
 }
 
 .meal-card:hover {
   transform: translateY(-1.2rem);
-  -webkit-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.08);
-  -moz-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.08);
-  box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.08);
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.08);
+  -moz-box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.08);
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.08);
 }
 
 .meal-image {
@@ -590,9 +590,10 @@ input[type=submit]:active {
   display: flex;
   border-radius: 1rem;
   overflow: hidden;
-  -webkit-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.1);
-  box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.1);
+  background-color: var(--light-orange);
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.1);
 }
 
 .signup-text-box {
@@ -624,15 +625,17 @@ label {
 
 input {
   width: 100%;
-  border: 2px solid var(--light-orange);
+  outline: none;
+  border: 2px solid var(--white);
   border-radius: 0.5rem;
   padding: 0.75rem;
+  font-family: "Encode sans", sans-serif;
   font-size: 1.125rem;
   color: var(--dark-gray);
 }
 
 input::placeholder {
-  color: var(--light-gray);
+  color: #d1d1d1;
 }
 
 input[type=submit] {
@@ -651,7 +654,7 @@ input[type=submit]:active {
   flex: 1.5;
   border-radius: 0 1rem 1rem 0;
   background:
-    linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+    linear-gradient(90deg, rgba(223,116,3,0.10), rgba(223,116,3,0.10)),
     url("../images/signup.png");
   background-position: center;
   background-size: cover;
@@ -660,7 +663,6 @@ input[type=submit]:active {
 /* Footer Section */
 
 footer {
-  border-top: 2px solid var(--light-orange);
   font-size: 1rem;
   line-height: 1.4;
   color: var(--dark-gray);
@@ -671,7 +673,7 @@ footer .container {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
   justify-content: space-between;
   gap: 3.8rem;
-  margin-bottom: 0;
+  padding-top: 4rem;
 }
 
 .logo-col {
@@ -697,8 +699,8 @@ address {
 }
 
 .address {
-  font-weight: 500;
   margin-bottom: 2.4rem;
+  font-weight: 500;
 }
 
 .footer-link:link,
@@ -719,4 +721,8 @@ address {
 
 .footer-nav li {
   margin-bottom: 1rem;
+}
+
+.footer-nav li:last-child {
+  margin-bottom: 0;
 }
