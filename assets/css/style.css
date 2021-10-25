@@ -357,3 +357,108 @@ a {
   text-align: center;
   color: var(--white);
 }
+
+/* Meals Section */
+
+.meals-container {
+  flex-direction: column;
+}
+
+.meals-container .section-header {
+  text-align: center;
+}
+
+.meal-cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.meal-card {
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.1);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.meal-card:hover {
+  transform: translateY(-1.2rem);
+  -webkit-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.08);
+  -moz-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.08);
+  box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.08);
+}
+
+.meal-image {
+  min-width: 100%;
+  height: auto;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.meal-copy-box {
+  padding: 2rem;
+}
+
+.tags {
+  margin-bottom: 0.75rem;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 0.25rem;
+  padding: 0.25rem 0.375rem;
+  border-radius: 1rem;
+  font-size: 0.79rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.vegetarian-tag {
+  background-color: #51CF66;
+}
+
+.vegan-tag {
+  background-color: #94D82D;
+}
+
+.paleo-tag {
+  background-color: #FFD43B;
+}
+
+.pescitarian-tag {
+  background-color: #7FEAB4;
+}
+
+.meal-name {
+  margin-bottom: 2rem;
+  font-size: 1.602rem;
+  font-weight: 500;
+}
+
+.meal-attributes {
+  list-style-type: none;
+}
+
+.meal-attributes li {
+  margin-bottom: 1rem;
+}
+
+.attribute {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  letter-spacing: 0.02rem;
+}
+
+.attribute ion-icon {
+  margin-right: 0.625rem;
+  font-size: 1.424rem;
+  color: var(--dark-orange);
+}
+
+.recipes-btn-container {
+  text-align: center;
+}
