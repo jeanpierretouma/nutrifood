@@ -130,9 +130,7 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   padding: 2rem 4rem;
 }
 
-.logo {
-  max-width: 100%;
-}
+.logo {max-width: 100%;}
 
 .main-nav-list {
   display: flex;
@@ -143,19 +141,13 @@ input[type=submit]:active {background-color: var(--dark-orange);}
 }
 
 .main-nav-list .link:link,
-.main-nav-list .link:visited {
-  color: var(--black);
-}
+.main-nav-list .link:visited {color: var(--black);}
 
 .main-nav-list .link:hover,
-.main-nav-list .link:active {
-  color: var(--dark-orange);
-}
+.main-nav-list .link:active {color: var(--dark-orange);}
 
 .nav-cta:link,
-.nav-cta:visited {
-  padding: 0.75rem 2rem;
-}
+.nav-cta:visited {padding: 0.75rem 2rem;}
 
 /* Hero Section */
 
