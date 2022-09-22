@@ -10,11 +10,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
+html, body {
   overflow-x: hidden;
-}
-
-body {
   font: 400 16px/1 "Encode Sans", sans-serif;
   color: var(--black);
 }
@@ -43,9 +40,7 @@ body {
   max-width: 71.25rem;
 }
 
-.section-header {
-  margin-bottom: 4rem;
-}
+.section-header {margin-bottom: 4rem;}
 
 /* Typography */
 
@@ -68,13 +63,8 @@ body {
   letter-spacing: 0.025rem;
 }
 
-.heading-primary {
-  font-size: 2.887rem;
-}
-
-.heading-secondary {
-  font-size: 2.281rem;
-}
+.heading-primary {font-size: 2.887rem;}
+.heading-secondary {font-size: 2.281rem;}
 
 .heading-tertiary {
   margin-bottom: 1rem;
@@ -90,15 +80,11 @@ body {
   color: var(--dark-gray);
 }
 
-.highlight {
-  color: var(--orange);
-}
+.highlight {color: var(--orange);}
 
 /* Links & Buttons */
 
-a {
-  text-decoration: none;
-}
+a {text-decoration: none;}
 
 .link:link,
 .link:visited,
@@ -128,9 +114,7 @@ input[type=submit]:visited {
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
-input[type=submit]:active {
-  background-color: var(--dark-orange);
-}
+input[type=submit]:active {background-color: var(--dark-orange);}
 
 
 /* – Sections - */
