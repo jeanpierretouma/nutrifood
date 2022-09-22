@@ -232,13 +232,8 @@ input[type=submit]:active {background-color: var(--dark-orange);}
 
 /* How-It-Works Section */
 
-.how-container {
-  flex-direction: column;
-}
-
-.how-container .section-header {
-  text-align: center;
-}
+.how-container {flex-direction: column;}
+.how-container .section-header {text-align: center;}
 
 .step-section {
   display: flex;
@@ -247,17 +242,9 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   margin-bottom: 2rem;
 }
 
-.step-section:nth-child(3) {
-  flex-direction: row-reverse;
-}
-
-.step-section:nth-child(4) {
-  margin-bottom: 6rem;
-}
-
-.step-copy-box {
-  flex: 1;
-}
+.step-section:nth-child(3) {flex-direction: row-reverse;}
+.step-section:nth-child(4) {margin-bottom: 6rem;}
+.step-copy-box {flex: 1;}
 
 .step-number {
   display: inline-block;
@@ -266,9 +253,7 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   color: var(--light-gray);
 }
 
-.step-image-box {
-  flex: 0.79;
-}
+.step-image-box {flex: 0.79;}
 
 .step-image {
   max-width: 100%;
@@ -283,9 +268,7 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   text-align: center;
 }
 
-.download-section .body-text {
-  margin-bottom: 2rem;
-}
+.download-section .body-text {margin-bottom: 2rem;}
 
 .download-cta-box {
   display: flex;
