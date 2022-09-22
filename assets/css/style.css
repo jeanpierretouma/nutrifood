@@ -193,9 +193,7 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   gap: 7rem;
 }
 
-.features-image-box {
-  flex: 1.2;
-}
+.features-image-box {flex: 1.2;}
 
 .features-image {
   width: 100%;
@@ -203,21 +201,12 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   border-radius: 1rem;
 }
 
-.features-copy-box {
-  flex: 1.8;
-}
+.features-copy-box {flex: 1.8;}
 
 .features-box {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
-}
-
-.features-box:first-of-type {
-  margin-bottom: 4rem;
-}
-
-.feature-box {
-  flex: 1;
 }
 
 .feature-icon {
