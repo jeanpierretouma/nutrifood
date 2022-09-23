@@ -477,13 +477,8 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   padding: 4rem;
 }
 
-.signup-text-box .heading-secondary {
-  margin-bottom: 1rem;
-}
-
-.signup-text-box .body-text {
-  margin-bottom: 3rem;
-}
+.signup-text-box .heading-secondary {margin-bottom: 1rem;}
+.signup-text-box .body-text {margin-bottom: 3rem;}
 
 .signup-form {
   display: grid;
@@ -510,9 +505,7 @@ input {
   color: var(--dark-gray);
 }
 
-input::placeholder {
-  color: #d1d1d1;
-}
+input::placeholder {color: #d1d1d1;}
 
 input[type=submit] {
   border: 1px solid var(--orange);
@@ -522,9 +515,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover,
-input[type=submit]:active {
-  border: 1px solid var(--dark-orange);
-}
+input[type=submit]:active {border: 1px solid var(--dark-orange);}
 
 .signup-image-box {
   flex: 1.5;
