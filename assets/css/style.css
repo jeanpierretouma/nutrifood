@@ -538,7 +538,6 @@ footer {
 footer .container {
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
-  justify-content: space-between;
   gap: 3.8rem;
   padding-top: 4rem;
 }
@@ -561,9 +560,7 @@ footer .container {
   color: var(--black);
 }
 
-address {
-  font-style: normal;
-}
+address {font-style: normal;}
 
 .address {
   margin-bottom: 2.4rem;
@@ -578,21 +575,10 @@ address {
 }
 
 .footer-link:hover,
-.footer-link:active {
-  color: var(--black);
-}
-
-.footer-nav {
-  list-style-type: none;
-}
-
-.footer-nav li {
-  margin-bottom: 1rem;
-}
-
-.footer-nav li:last-child {
-  margin-bottom: 0;
-}
+.footer-link:active {color: var(--black);}
+.footer-nav {list-style-type: none;}
+.footer-nav li {margin-bottom: 1rem;}
+.footer-nav li:last-child {margin-bottom: 0;}
 
 
 /* - Media Queries - */
