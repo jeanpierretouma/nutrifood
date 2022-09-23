@@ -436,13 +436,8 @@ input[type=submit]:active {background-color: var(--dark-orange);}
 
 /* Testimonials Section */
 
-.testimonials-container {
-  flex-direction: column;
-}
-
-.testimonials-container .section-header {
-  text-align: center;
-}
+.testimonials-container {flex-direction: column;}
+.testimonials-container .section-header {text-align: center;}
 
 .testimonials-box {
   display: flex;
@@ -450,9 +445,7 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   gap: 4rem;
 }
 
-.testimonial {
-  flex: 1;
-}
+.testimonial {flex: 1;}
 
 .testimonial-image {
   display: inline-block;
