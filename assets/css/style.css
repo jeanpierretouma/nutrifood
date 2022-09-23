@@ -303,13 +303,8 @@ input[type=submit]:active {background-color: var(--dark-orange);}
 
 /* Meals Section */
 
-.meals-container {
-  flex-direction: column;
-}
-
-.meals-container .section-header {
-  text-align: center;
-}
+.meals-container {flex-direction: column;}
+.meals-container .section-header {text-align: center;}
 
 .meal-cards-container {
   display: flex;
@@ -340,13 +335,8 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   border-radius: 1rem 1rem 0 0;
 }
 
-.meal-copy-box {
-  padding: 2rem;
-}
-
-.tags {
-  margin-bottom: 0.75rem;
-}
+.meal-copy-box {padding: 2rem;}
+.tags {margin-bottom: 0.75rem;}
 
 .tag {
   display: inline-block;
@@ -358,21 +348,10 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   text-transform: uppercase;
 }
 
-.vegetarian-tag {
-  background-color: #51CF66;
-}
-
-.vegan-tag {
-  background-color: #94D82D;
-}
-
-.paleo-tag {
-  background-color: #FFD43B;
-}
-
-.pescitarian-tag {
-  background-color: #7FEAB4;
-}
+.vegetarian-tag {background-color: #51CF66;}
+.vegan-tag {background-color: #94D82D;}
+.paleo-tag {background-color: #FFD43B;}
+.pescitarian-tag {background-color: #7FEAB4;}
 
 .meal-name {
   margin-bottom: 2rem;
@@ -380,13 +359,8 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   font-weight: 500;
 }
 
-.meal-attributes-list {
-  list-style-type: none;
-}
-
-.meal-attributes-list li {
-  margin-bottom: 1rem;
-}
+.meal-attributes-list {list-style-type: none;}
+.meal-attributes-list li {margin-bottom: 1rem;}
 
 .attribute {
   display: flex;
@@ -401,19 +375,12 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   color: var(--dark-orange);
 }
 
-.recipes-btn-container {
-  text-align: center;
-}
+.recipes-btn-container {text-align: center;}
 
 /* Pricing Section */
 
-.pricing-container {
-  flex-direction: column;
-}
-
-.pricing-container .section-header {
-  text-align: center;
-}
+.pricing-container {flex-direction: column;}
+.pricing-container .section-header {text-align: center;}
 
 .plans-container {
   display: flex;
@@ -428,9 +395,7 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   padding: 2rem;
 }
 
-.plan-card:last-of-type {
-  background-color: var(--light-orange);
-}
+.plan-card:last-of-type {background-color: var(--light-orange);}
 
 .plan-name {
   margin-bottom: 1rem;
@@ -456,30 +421,13 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   text-align: center;
 }
 
-.plan-attributes-list {
-  list-style-type: none;
-}
-
-.plan-attributes-list .attribute {
-  color: var(--dark-gray);
-}
-
-.plan-attributes-list li {
-  margin-bottom: 1rem;
-}
-
-.plan-attributes-list li:last-of-type {
-  margin-bottom: 2rem;
-}
-
-.plan-cta-box {
-  text-align: center;
-}
-
+.plan-attributes-list {list-style-type: none;}
+.plan-attributes-list .attribute {color: var(--dark-gray);}
+.plan-attributes-list li {margin-bottom: 1rem;}
+.plan-attributes-list li:last-of-type {margin-bottom: 2rem;}
+.plan-cta-box {text-align: center;}
 .plan-cta-box .btn:link,
-.plan-cta-box .btn:visited {
-  padding: 1rem 2.5rem;
-}
+.plan-cta-box .btn:visited {padding: 1rem 2.5rem;}
 
 .pricing-terms {
   font-size: 1rem;
