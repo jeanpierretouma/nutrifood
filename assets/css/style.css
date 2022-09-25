@@ -583,68 +583,54 @@ address {font-style: normal;}
 
 /* - Media Queries - */
 
-/* For laptops and large tablets 1300px */
-@media only screen and (max-width: 1300px) {
+/* For laptops and large tablets 1204px */
+@media only screen and (max-width: 1204px) {
 
   /* Reusable Components */
-  .container {
-    max-width: 64rem;
-  }
+  .container {max-width: 56rem;}
+
+  /* Typography */
+  .heading-primary {font-size: 2.566rem;}
+  .heading-secondary {font-size: 2.027rem;}
+  .heading-tertiary {font-size: 1.602rem;}
 
   /* Navigation Bar */
-  .nav-bar {
-    padding: 2rem;
-  }
+  .nav-bar {gap: 1.5rem;}
+  .main-nav-list {column-gap: 1.5rem;}
 
   /* Hero Section */
-  .hero-copy-box {
-    flex: 1;
-  }
+  .hero-container {gap: 4rem;}
 
-  .hero-image-box {
-    flex: 1;
+  .hero-copy-box .btn:last-child:link,
+  .hero-copy-box .btn:last-child:visited {
+    margin-left: 0rem;
+    margin-top: 1rem;
   }
 
   /* Features Section */
-  .features-container {
-    text-align: center;
-  }
-
-  .features-image-box {
-    display: none;
-  }
-
-  .features-copy-box {
-    flex: 1;
-  }
+  .features-container {text-align: center;}
+  .features-image-box {display: none;}
+  .features-copy-box {flex: 1;}
+  .feature-title {font-size: 1.424rem;}
 
   /* How-It-Works Section */
-  .step-section {
-    gap: 4rem;
-  }
+  .step-section {gap: 4rem;}
+  .step-number {font-size: 5.202rem;}
 
   /* Meals Section */
-  .meal-cards-container {
-    gap: 2rem;
-  }
+  .meal-cards-container {gap: 2rem;}
+  .meal-name {font-size: 1.424rem;}
+  
+  /* Pricing Section */
+  .plan-name {font-size: 1.266rem;}
+  .plan-price {font-size: 2.027rem;}
+
+  /* Signup Section */
+  .signup-text-box {padding: 2rem;}
+
+  /* Footer Section */
+  footer .container {gap: 2rem;}
 }
-
-/* For Small laptops and normal tablets 1054px */
-@media only screen and (max-width: 1054px) {
-
-  /* Reusable Components */
-  .container {
-    max-width: 56rem;
-  }
-
-  /* Typography */
-  .heading-primary {
-    font-size: 2.566rem;
-  }
-
-  .heading-secondary {
-    font-size: 2.027rem;
-  }
 
   .heading-tertiary {
     font-size: 1.602rem;
