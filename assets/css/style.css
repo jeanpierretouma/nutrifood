@@ -128,6 +128,21 @@ input[type=submit]:active {background-color: var(--dark-orange);}
   align-items: center;
   margin-bottom: 4rem;
   padding: 2rem 4rem;
+  transition: padding-top 0.5s, padding-bottom 0.5s;
+}
+
+.sticky-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--white);
+  opacity: 0.985;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  transition: all 0.5s;
 }
 
 .logo {max-width: 100%;}
