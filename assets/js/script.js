@@ -26,3 +26,20 @@ navBtn.addEventListener("click", function () {
   menuBtn.classList.toggle("menuBtn-close");
   closeBtn.classList.toggle("closeBtn-open");
 });
+
+
+// Add smooth scrolling to all links
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
