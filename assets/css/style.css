@@ -663,6 +663,12 @@ address {font-style: normal;}
 @media only screen and (max-width: 960px) {
 
   /* Navigation Bar */
+  .nav-bar {
+    max-width: 56rem;
+    margin: 0 auto 4rem;
+    padding: 2rem;
+  }
+  
   .sticky-nav-bar {position: fixed;}
   .btn-mobile-nav {display: flex;}
   .menuBtn-open {display: block;}
