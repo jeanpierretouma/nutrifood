@@ -11,3 +11,18 @@ window.addEventListener("scroll", function () {
     heroSection.style.marginTop = "0rem";
   };
 });
+
+
+// Toggle mobile nav and menu button
+const navMenu = document.querySelector("#nav");
+const navList = document.querySelector(".main-nav-list");
+const navBtn = document.querySelector(".btn-mobile-nav");
+const menuBtn = document.querySelector(".menuBtn-open");
+const closeBtn = document.querySelector(".closeBtn-close");
+
+navBtn.addEventListener("click", function () {
+  navMenu.classList.toggle("nav-open");
+  navList.classList.toggle("main-nav-list-mobile");
+  menuBtn.classList.toggle("menuBtn-close");
+  closeBtn.classList.toggle("closeBtn-open");
+});

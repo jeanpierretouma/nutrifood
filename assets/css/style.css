@@ -164,6 +164,18 @@ input[type=submit]:active {background-color: var(--dark-orange);}
 .nav-cta:link,
 .nav-cta:visited {padding: 0.75rem 2rem;}
 
+.btn-mobile-nav {
+  display: none;
+  z-index: 20;
+  border: none;
+  background-color: transparent;
+  font-size: 2.281rem;
+  font-weight: 400;
+  color: var(--black);
+  text-align: center;
+  cursor: pointer;
+}
+
 /* Hero Section */
 
 .hero-container {
@@ -647,61 +659,36 @@ address {font-style: normal;}
   footer .container {gap: 2rem;}
 }
 
-  .heading-tertiary {
-    font-size: 1.602rem;
-  }
+/* For Small laptops and normal tablets 960px */
+@media only screen and (max-width: 960px) {
 
   /* Navigation Bar */
-  .nav-bar {
-    gap: 1.5rem;
+  .sticky-nav-bar {position: fixed;}
+  .btn-mobile-nav {display: flex;}
+  .menuBtn-open {display: block;}
+  .closeBtn-close {display: none;}
+  .menuBtn-close {display: none;}
+  .closeBtn-open {display: block;}
+  nav {display: none;}
+
+  .nav-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    opacity: 0.985;
   }
 
-  .main-nav-list {
-    gap: 1.5rem;
-  }
+  .main-nav-list {display: none;}
 
-  /* Hero Section */
-  .hero-container {
-    column-gap: 4rem;
-  }
-
-  .hero-copy-box .btn:last-child:link,
-  .hero-copy-box .btn:last-child:visited {
-    margin-top: 1rem;
-    margin-left: 0;
-  }
-
-  /* Features Section */
-  .feature-title {
-    font-size: 1.424rem;
-  }
-
-  /* How-It-Works Section */
-  .step-number {
-    font-size: 5.202rem;
-  }
-
-  /* Meals Section */
-  .meal-name {
-    font-size: 1.424rem;
-  }
-
-  /* Pricing Section */
-  .plan-name {
-    font-size: 1.266rem;
-  }
-  
-  .plan-price {
-    font-size: 2.027rem;
-  }
-
-  /* Signup Section */
-  .signup-text-box {
-    padding: 2rem;
-  }
-
-  /* Footer Section */
-  footer .container {
+  .main-nav-list-mobile {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
   }
 }
