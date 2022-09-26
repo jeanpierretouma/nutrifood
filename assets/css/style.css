@@ -664,9 +664,9 @@ address {font-style: normal;}
 
   /* Navigation Bar */
   .nav-bar {
-    max-width: 56rem;
+    width: 100%;
     margin: 0 auto 4rem;
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
   
   .sticky-nav-bar {position: fixed;}
