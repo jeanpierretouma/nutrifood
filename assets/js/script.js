@@ -1,3 +1,8 @@
+/*
+  Credit: Online Tutorials – YouTube Channel
+  Title: Sticky Navigation Bar On Scroll Using Vanilla Javascript | Fixed Navbar on Scroll
+  Source: https://www.youtube.com/watch?v=6HFpw5fcaD8
+*/
 // Toggle sticky nav and add additional top margin to hero section
 window.addEventListener("scroll", function () {
   var navBar = document.querySelector(".nav-bar");
@@ -28,6 +33,11 @@ navBtn.addEventListener("click", function () {
 });
 
 
+/*
+  Credit: W3Schools
+  Title: How TO - Smooth Scroll
+  Source: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+*/
 // Add smooth scrolling to all links
 $(document).ready(function(){
   $("a").on('click', function(event) {
