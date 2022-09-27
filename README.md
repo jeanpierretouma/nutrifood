@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/jeanpierretouma/nutrifood](https://github.com/jeanpierretouma/nutrifood)
+- Repository URL: [https://github.com/jeanpierretouma/nutrifood](https://github.com/jeanpierretouma/nutrifood)
 - Live Site URL: [https://jeanpierretouma.github.io/nutrifood](https://jeanpierretouma.github.io/nutrifood)
 
 ## Process
