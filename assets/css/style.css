@@ -810,3 +810,29 @@ address {font-style: normal;}
     gap: 2rem;
   }
 }
+
+/* For Small Phones 390px */
+@media only screen and (max-width: 390px) {
+
+  /* Hero Section */
+  .hero-image {max-width: 100%;}
+
+  /* How-It-Works Section */
+  .step-image {max-width: 100%;}
+  .download-section {padding: 1rem;}
+  .download-section .heading-tertiary {font-size: 1.5rem;}
+  .download-cta {max-width: 11rem;}
+  .web-app-section {padding: 1rem;}
+  .coming-soon {font-size: 1.25rem;}
+
+  /* Meals Section */
+  .meal-copy-box {padding: 1rem;}
+  .meal-name {font-size: 1.5rem;}
+
+  /* Pricing Section */
+  .plan-card {padding: 1rem;}
+  .plan-cta-box a {width: 100%;}
+
+  /* Signup Section */
+  .signup-text-box {padding: 1rem;}
+}
