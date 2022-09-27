@@ -704,24 +704,14 @@ address {font-style: normal;}
   }
 }
 
-/* For Tablets and Large phone 798px */
-@media only screen and (max-width: 798px) {
+/* For Tablets and Large phone 768px */
+@media only screen and (max-width: 768px) {
 
   /* Reusable Components */
-  .container {
-    max-width: 100%;
-  }
+  .container {max-width: 100%;}
 
   /* Typography */
-  .body-text {
-    font-size: 1.125rem;
-  }
-
-  /* Navigation Bar */
-  .nav-bar {
-    padding: 1.4rem 2rem;
-    margin-bottom: 2rem;
-  }
+  .body-text {font-size: 1.125rem;}
 
   /* Hero Section */
   .hero-container {
@@ -737,40 +727,26 @@ address {font-style: normal;}
     margin-left: 1rem;
   }
 
-  .hero-image {
-    max-width: 80%;
-  }
+  .hero-image {max-width: 80%;}
 
   /* How-It-Works Section */
   .step-section {
+    margin-bottom: 4rem;
     gap: 2rem;
   }
 
-  .coming-soon {
-    padding: 0;
-  }
+  .coming-soon {padding: 0;}
 
   /* Meals Section */
-  .meal-cards-container {
-    gap: 1rem;
-  }
+  .meal-copy-box {padding: 1rem;}
+  .meal-name {font-size: 1.125rem;}
+  .attribute {font-size: 1rem;}
 
-  .meal-copy-box {
-    padding: 1rem;
-  }
-
-  .meal-name {
-    font-size: 1.125rem;
-  }
-
-  .attribute {
-    font-size: 1rem;
-  }
+  /* Pricing Section */
+  .plans-container {gap: 2rem;}
 
   /* Signup Section */
-  .signup-form {
-    gap: 1rem;
-  }
+  .signup-form {gap: 1rem;}
 }
 
 /* For Large phone 635px */
