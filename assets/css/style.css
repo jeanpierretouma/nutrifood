@@ -666,9 +666,14 @@ address {font-style: normal;}
   .nav-bar {
     width: 100%;
     margin: 0 auto 4rem;
-    padding: 1rem 2rem;
+    padding: 2rem;
   }
   
+  .sticky-nav-bar {
+    position: fixed;
+    padding: 1rem 2rem;
+  }
+
   .sticky-nav-bar {position: fixed;}
   .btn-mobile-nav {display: flex;}
   .menuBtn-open {display: block;}
