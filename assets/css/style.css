@@ -749,69 +749,46 @@ address {font-style: normal;}
   .signup-form {gap: 1rem;}
 }
 
-/* For Large phone 635px */
-@media only screen and (max-width: 635px) {
+/* For Large phone 640px */
+@media only screen and (max-width: 640px) {
 
   /* Features Section */
-  .features-box {
-    flex-direction: column;
-  }
+  .features-box {grid-template-columns: 1fr;}
 
   /* How-It-Works Section */
-  .step-section {
+  .step-section,
+  .step-section:nth-child(3) {
     flex-direction: column;
     margin-bottom: 3rem;
     text-align: center;
   }
 
-  .step-section:nth-child(3) {
-    flex-direction: column;
-  }
-
-  .step-image {
-    max-width: 80%;
-  }
+  .step-image {max-width: 80%;}
 
   /* Meals Section */
-  .meal-cards-container {
-    flex-direction: column;
-  }
-
-  .meal-image {
-    min-width: 100%;
-  }
-
-  .meal-name {
-    font-size: 1.602rem;
-  }
-
-  .attribute {
-    font-size: 1.125rem;
-  }
+  .meal-cards-container {flex-direction: column;}
+  .meal-image {min-width: 100%;}
+  .meal-copy-box {padding: 2rem;}
+  .meal-name {font-size: 1.602rem;}
+  .attribute {font-size: 1.125rem;}
 
   /* Pricing Section */
-  .plans-container {
-    flex-direction: column;
-  }
+  .plans-container {flex-direction: column;}
 
   /* Testimonials Section */
   .testimonials-box {
     flex-direction: column;
+    text-align: center;
   }
 
   /* Signup Section */
-  .signup-form-container {
-    flex-direction: column;
-  }
-
-  .signup-image-box {
-    display: none;
-  }
+  .signup-form-container {flex-direction: column;}
+  .signup-image-box {display: none;}
 
   /* Footer Section */
   footer .container {
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
   }
 }
 
