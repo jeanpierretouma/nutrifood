@@ -674,7 +674,6 @@ address {font-style: normal;}
     padding: 1rem 2rem;
   }
 
-  .sticky-nav-bar {position: fixed;}
   .btn-mobile-nav {display: flex;}
   .menuBtn-open {display: block;}
   .closeBtn-close {display: none;}
@@ -716,8 +715,6 @@ address {font-style: normal;}
   /* Hero Section */
   .hero-container {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
   }
 
@@ -759,7 +756,6 @@ address {font-style: normal;}
   .step-section,
   .step-section:nth-child(3) {
     flex-direction: column;
-    margin-bottom: 3rem;
     text-align: center;
   }
 
@@ -792,13 +788,8 @@ address {font-style: normal;}
   }
 }
 
-/* For Small Phones 492px */
-@media only screen and (max-width: 492px) {
-
-  /* Global Settings */
-  html {
-    font-size: 15px;
-  }
+/* For Small Phones 570px */
+@media only screen and (max-width: 570px) {
 
   /* Hero Section */
   .hero-copy-box .btn:last-child:link,
